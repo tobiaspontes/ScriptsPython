@@ -2,7 +2,7 @@
 
 def tabuada(x):
     for i in range(10):
-        print('{} x {} = {}'.format(x, (1 + 1), x * (i + 1)))
+        print('{} x {} = {}'.format(x, (i + 1), x * (i + 1)))
     print()
 
 if __name__ == '__main__':
