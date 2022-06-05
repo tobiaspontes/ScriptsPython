@@ -6,6 +6,8 @@ def tabuada(x):
     print()
 
 if __name__ == '__main__':
+    print(9
+    )
     nro = int(input('Entre com um número: '))
     print(f'\n\033[1;32mTabuada do {nro}'+'\n')
     tabuada(nro)
