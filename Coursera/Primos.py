@@ -14,7 +14,10 @@ def éPrimo(x):
 limite = int(input('Limite máximo: '))
 
 n = 2
-while n < limite:
+contador_primos = 0
+while n <= limite:
     if éPrimo(n):
         print(n, end = ', ')
+        contador_primos += 1
     n = n + 1
+print('\n', 'Existem', contador_primos, 'números primos entre 2 e', limite)

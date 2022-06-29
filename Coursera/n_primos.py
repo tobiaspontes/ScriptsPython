@@ -11,6 +11,7 @@ def éPrimo(x):
     else:
         return True
 
+
 def n_primos(n):
     ''' retorna a quantidade de números primos entre 2 e p número informado '''
     i = 2
@@ -20,4 +21,9 @@ def n_primos(n):
             contador_primos = contador_primos + 1
         i = i + 1
     return contador_primos
-    
+
+def main():
+    numero = int(input('Digite um número inteiro: '))
+    print('A quantidade de números primos entre 2 e', numero, 'é:', n_primos(numero))
+
+main()
