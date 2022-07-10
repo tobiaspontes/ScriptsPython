@@ -1,6 +1,6 @@
 # Retorna a quantidade de números ímpares solicitada
 
-n = int(input('Digite o valor de n: '))
+n = int(input('Digite a quantidade de números ímpares desejada: '))
 i = 1
 k = 1
 while k <= n:

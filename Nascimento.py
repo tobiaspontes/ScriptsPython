@@ -14,8 +14,8 @@ def obter_mes(n):
     if n == '11': return 'novembro'
     if n == '12': return 'dezembro'
 
-print('\n\033[1;32mNascimento')
+print('\nNascimento')
 dia = input('\nEntre com o dia do seu nascimento: ')
-mes = input('\nEntre com o mês do seu nascimento: ')
-ano = input('\nEntre com o ano do seu nascimento: ')
-print('\n\033[1;36mVocê nasceu dia',dia,'de',obter_mes(mes),'de',ano,'\n')
+mes = input('Entre com o mês do seu nascimento: ')
+ano = input('Entre com o ano do seu nascimento: ')
+print('\nVocê nasceu dia',dia,'de',obter_mes(mes),'de',ano,'\n')

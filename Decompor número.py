@@ -13,12 +13,12 @@ def obter_digito(d):
     if d == 8: return 'Centena de milhão  '
     if d == 9: return 'Bilhão             '
     
-print('\n\033[1;32mDecomposição')
+print('\nDecomposição')
 numero = input('\nDigite um número: ')
 tamanho = len(numero)
 x = int(numero)
 lista = []
-print(f'\n\033[0;33mO número digitado foi {x:,}\n'.replace(',','.'))
+print(f'\nO número digitado foi {x:,}\n'.replace(',','.'))
 for i in range(tamanho):
     lista.append(x % 10) # dividindo o nro por 10 e colocando o resto na lista
     x = x // 10 # dividindo o nro por 10 e ficando com a parte inteira do resultado
