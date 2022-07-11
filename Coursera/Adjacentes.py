@@ -1,13 +1,5 @@
 # esse código pede ao usuário para digitar um número inteiro e verifica se existem dígitos iguais adjacentes
 
-def guarda_digito(y):
-	digito_anterior = y % 10
-	return digito_anterior
-
-def guarda_numero(y):
-	numero_anterior = y // 10
-	return numero_anterior
-
 def compara_digitos(digito_anterior, numero_anterior, tamanho):
 	encontrei_adjacente = False
 	i = 0
@@ -32,7 +24,7 @@ if (__name__ == '__main__'):
 	x = input('Digite um número inteiro: ')
 	tamanho = len(x)
 	y = int(x)
-	digito_anterior = guarda_digito(y)
-	numero_anterior = guarda_numero(y)
+	digito_anterior = y % 10
+	numero_anterior = y // 10
 	resultado = compara_digitos(digito_anterior, numero_anterior, tamanho)
 	imprime_mensagem(resultado)
