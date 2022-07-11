@@ -4,25 +4,16 @@
 
 import gera_lista_numeros_inteiros
 
-def cria_lista_pares(numeros):
+def cria_lista_pares_impares(numeros):
     pares = [x for x in numeros if x % 2 == 0]
-    return pares
-
-def cria_lista_impares(numeros):
     impares = [x for x in numeros if not x % 2 == 0]
-    return impares
+    return [pares, impares]
 
-def imprime_mensagens_pares(pares):
-    print('Qtde de pares digitados = ', len(pares))
-    print('Números pares: {}'.format(pares))
-
-def imprime_mensagens_impares(impares):
-    print('Qtde de ímpares digitados = ', len(impares))
-    print('Números ímpares: {}'.format(impares))
+def imprime_mensagens(resultado):
+    print('Qtde de pares digitados = ', len(resultado[0]),':','{}'.format(resultado[0]))
+    print('Qtde de ímpares digitados = ', len(resultado[1]),':','{}'.format(resultado[1]))
 
 if (__name__ == '__main__'):
     lista_numeros = gera_lista_numeros_inteiros.gera_numeros()
-    pares = cria_lista_pares(lista_numeros)
-    impares = cria_lista_impares(lista_numeros)
-    imprime_mensagens_pares(pares)
-    imprime_mensagens_impares(impares)
+    resultado = cria_lista_pares_impares(lista_numeros)
+    imprime_mensagens(resultado)
