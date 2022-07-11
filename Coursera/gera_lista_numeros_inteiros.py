@@ -12,6 +12,7 @@ def mensagem_inicial():
     print(55*'*')
 
 def gera_numeros(n, limite_inferior, limite_superior):
+    verifica_erro(n, limite_inferior, limite_superior)
     lista_numeros = []
     i = 1
     while i <= n:
@@ -34,6 +35,5 @@ if (__name__ == '__main__'):
     n = int(input('\nQuantos números na lista? '))
     limite_inferior = int(input('Qual o limite inferior? '))
     limite_superior = int(input('Qual o limite superior? '))
-    verifica_erro(n, limite_inferior, limite_superior)
     lista_numeros = gera_numeros(n, limite_inferior, limite_superior)
     print('\nA lista gerada é: {}\n'.format(lista_numeros))

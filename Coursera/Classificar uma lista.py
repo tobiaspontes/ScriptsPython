@@ -16,24 +16,24 @@ def verifica_ordem(lista):
     return crescente
 
 def gera_listas_classificadas(lista):
-    listas_classificadas = []
     lista_crescente = sorted(lista)
     lista_decrescente = sorted(lista, reverse=True)
-    listas_classificadas.append(lista_crescente)
-    listas_classificadas.append(lista_decrescente)
-    return listas_classificadas
+    return [lista_crescente, lista_decrescente]
 
 def imprime_mensagens(lista, listas_classificadas):
-    print(f'Lista original:{lista:}')
-    print(f'Lista em ordem crescente:{listas_classificadas[0]:}')
-    print(f'Lista em ordem decrescente:{listas_classificadas[1]:}')
+    print(f'\nLista original:{lista:}')
+    print(f'\nLista em ordem crescente:{listas_classificadas[0]:}')
+    print(f'\nLista em ordem decrescente:{listas_classificadas[1]:}\n')
 
 if (__name__ == '__main__'):
-    lista = gera_lista_numeros_inteiros.gera_numeros()
-    if verifica_ordem(lista):
+    qtde = int(input('\nQuantos números na lista? '))
+    li = int(input('Qual o limite inferior? '))
+    ls = int(input('Qual o limite superior? '))
+    lista_original = gera_lista_numeros_inteiros.gera_numeros(n=qtde, limite_inferior=li, limite_superior=ls)
+    if verifica_ordem(lista_original):
         print('\nA lista está em ordem crescente.')
     else:
         print('\nA lista não está em ordem crescente.')
-    listas_classificadas = gera_listas_classificadas(lista)
-    imprime_mensagens(lista, listas_classificadas)
+    listas_classificadas = gera_listas_classificadas(lista_original)
+    imprime_mensagens(lista_original, listas_classificadas)
 
