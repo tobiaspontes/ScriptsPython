@@ -1,5 +1,5 @@
 # Cria uma matriz cujo valores são o produto do número da linha x o número da coluna.
-# A matriz é uma lista cujo cada elemento é uma lista. O tamanho da lista é a quantidade de linhas.
+# A matriz é uma lista onde cada elemento é uma lista. O tamanho da lista é a quantidade de linhas.
 
 def cria_matriz(num_linhas, num_colunas):
     ''' Esta função cria uma matriz (num_linhas x num_colunas)
@@ -12,16 +12,24 @@ def cria_matriz(num_linhas, num_colunas):
         matriz.append(linha) # adiciona linha à matriz
     return matriz
 
-# Entrada de dados
-nro_linhas = int(input('Digite o número de linhas: '))
-nro_colunas = int(input('Digite o número de colunas: '))
-print()
+def dimensoes(matriz):
+    ''' Esta função retorna as dimensões de uma matriz '''
+    i = len(matriz)
+    j = len(matriz[0])
+    dimensao = (str(i) + 'X' + str(j))
+    return dimensao
 
-# Chama a função
-matriz = cria_matriz(nro_linhas,nro_colunas)
+if (__name__ == '__main__'):
+    nro_linhas = int(input('\nDigite o número de linhas: '))
+    nro_colunas = int(input('Digite o número de colunas: '))
+    print()
 
-''' Imprime a matriz '''
-for i in range(nro_linhas):
-    print(matriz[i], end='\n')
+    # Chama a função
+    matriz = cria_matriz(nro_linhas,nro_colunas)
 
-print('\nA matriz é uma lista:', matriz)
+    ''' Imprime a matriz '''
+    print('A matriz tem dimensão:', dimensoes(matriz))
+    for i in range(nro_linhas):
+        print(matriz[i], end='\n')
+
+    print('\nA matriz é uma lista:', matriz)

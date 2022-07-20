@@ -4,7 +4,7 @@
 # exemplo: lista.sort() é a mesma lista classificada em ordem ascendente e modificada.
 # já a função sorted() classifica e cria nova lista.
 
-import gera_lista_numeros_inteiros
+from gera_lista import Lista
 
 def verifica_ordem(lista):
     crescente = True
@@ -29,11 +29,10 @@ if (__name__ == '__main__'):
     qtde = int(input('\nQuantos números na lista? '))
     li = int(input('Qual o limite inferior? '))
     ls = int(input('Qual o limite superior? '))
-    lista_original = gera_lista_numeros_inteiros.gera_numeros(n=qtde, limite_inferior=li, limite_superior=ls)
-    if verifica_ordem(lista_original):
+    lista_original = Lista(qtde, li, ls)
+    if verifica_ordem(lista_original.lista):
         print('\nA lista está em ordem crescente.')
     else:
         print('\nA lista não está em ordem crescente.')
-    listas_classificadas = gera_listas_classificadas(lista_original)
-    imprime_mensagens(lista_original, listas_classificadas)
-
+    listas_classificadas = gera_listas_classificadas(lista_original.lista)
+    imprime_mensagens(lista_original.lista, listas_classificadas)

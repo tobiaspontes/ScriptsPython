@@ -1,6 +1,6 @@
 # esse código gera uma lista com números inteiros aleatórios
 
-import random
+from gera_lista import Lista
 
 def mensagem_inicial():
     print()
@@ -11,29 +11,10 @@ def mensagem_inicial():
     print('*', 51 * ' ', '*')
     print(55*'*')
 
-def gera_numeros(n, limite_inferior, limite_superior):
-    verifica_erro(n, limite_inferior, limite_superior)
-    lista_numeros = []
-    i = 1
-    while i <= n:
-        numero = random.randrange(limite_inferior, limite_superior + 1)
-        lista_numeros.append(numero)
-        i += 1
-    return lista_numeros
-
-def verifica_erro(n, limite_inferior, limite_superior):
-    intervalo = (limite_superior + 1) - limite_inferior
-    if (intervalo <= 0):
-        print('Limite superior deve ser maior do que limite inferior!')
-        exit()
-    if (n > intervalo):
-        print('Quantidade de números solicitada é maior do que o intervalo!')
-        exit()
-
 if (__name__ == '__main__'):
     mensagem_inicial()
     n = int(input('\nQuantos números na lista? '))
     limite_inferior = int(input('Qual o limite inferior? '))
     limite_superior = int(input('Qual o limite superior? '))
-    lista_numeros = gera_numeros(n, limite_inferior, limite_superior)
-    print('\nA lista gerada é: {}\n'.format(lista_numeros))
+    lista_numeros = Lista(n, limite_inferior, limite_superior)
+    print('\nA lista gerada é: {}\n'.format(lista_numeros.lista))

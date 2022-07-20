@@ -34,10 +34,10 @@ def conta_caracteres(texto, ind):
     for caracter in texto:
        qtde_caracteres = qtde_caracteres + 1
 
-    print('\nQtde de caracteres: ', qtde_caracteres)
+    return qtde_caracteres
 
-# código principal
-texto = 'O C6 Bank, em sua contestação, reconhece tratar-se de golpe corriqueiro e que com a entrada em vigor do PIX, houve maior vulnerabilidade no sistema de pagamentos e transferências de numerário. O que nos faz concluir que o banco deveria recrudescer seus mecanismos de detecção de fraudes, caso existam de fato, e agir prontamente quando qualquer irregularidade ou suspeita lhe fosse comunicada. Infelizmente, não foi o que ocorreu no presente caso.'
-ind = 'frase'
-print('\n'+texto)
-conta_caracteres(texto, ind)
+if (__name__ == '__main__'):
+    texto = input('\nDigite o texto: ')
+    ind = 'frase'
+    qtde = conta_caracteres(texto, ind)
+    print('\nQtde de caracteres: ', qtde)

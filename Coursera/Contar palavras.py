@@ -1,4 +1,10 @@
-''' Esta função conta o número de ocorrências de cada palavra em uma frase '''
+''' Esta função conta o número de ocorrências de cada palavra em uma frase.
+    Qualquer caracter na lista .:!&@$%^&" é eliminado.
+    Qualquer caracter na lista \n\r\t,_" é substituído por espaço em branco.
+    Gera um dicionário com palavra(key) e quantidade de ocorrência no texto(value).
+    A expressão resultado.keys() retorna as chaves do dicionário (palavras).
+    A expressão resultado.values() retorna as quantidades de ocorrência de cada palavra.
+    A expressão resultado.items() retorna chave e valor (palavra e quantidade de ocorrência).   '''
 
 def count_words(sentence):
     for s in ".:!&@$%^&":  sentence=sentence.replace(s,'')
@@ -13,6 +19,11 @@ def count_words(sentence):
             counts[word] = 1
     return counts
 
-# código principal
-frase = 'O C6 Bank, em sua contestação, reconhece tratar-se de golpe corriqueiro e que com a entrada em vigor do PIX, houve maior vulnerabilidade no sistema de pagamentos e transferências de numerário. O que nos faz concluir que o banco deveria recrudescer seus mecanismos de detecção de fraudes, caso existam de fato, e agir prontamente quando qualquer irregularidade ou suspeita lhe fosse comunicada. Infelizmente, não foi o que ocorreu no presente caso.'
-count_words(frase)
+if (__name__ == '__main__'):
+    frase = input('\nDigite o texto: ')
+    resultado = count_words(frase)
+    for palavra, qtde in resultado.items():
+        complemento = 'vez'
+        if qtde > 1:
+            complemento = 'vezes'
+        print('{}: {} {}'.format(palavra, qtde, complemento))

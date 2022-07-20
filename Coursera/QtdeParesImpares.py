@@ -1,7 +1,7 @@
 # esse código gera uma lista de números inteiros aleatórios e cria duas listas
 # uma lista de números pares e outra de números ímpares
 
-import gera_lista_numeros_inteiros
+from gera_lista import Lista
 
 def cria_lista_pares_impares(numeros):
     pares = [x for x in numeros if x % 2 == 0]
@@ -17,6 +17,6 @@ if (__name__ == '__main__'):
     n = int(input('\nQuantos números na lista? '))
     limite_inferior = int(input('Qual o limite inferior? '))
     limite_superior = int(input('Qual o limite superior? '))
-    lista_numeros = gera_lista_numeros_inteiros.gera_numeros(n, limite_inferior, limite_superior)
-    resultado = cria_lista_pares_impares(lista_numeros)
-    imprime_mensagens(lista_numeros, resultado)
+    lista_numeros = Lista(n, limite_inferior, limite_superior)
+    resultado = cria_lista_pares_impares(lista_numeros.lista)
+    imprime_mensagens(lista_numeros.lista, resultado)
