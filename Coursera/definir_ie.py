@@ -1,23 +1,20 @@
-'''Este código recebe um número de IE informado pelo usuário
-e retorna os dígitos correspondentes à centena de milhar e dezena de milhar
-que são utilizados para definir qual IF deve cuidar do trabalho fiscal baseado na IE'''
+# Este código recebe um número de IE informado pelo usuário.
+# Retorna os dígitos correspondentes à centena de milhar e dezena de milhar,
+# que são utilizados para definir qual IF deve cuidar do trabalho fiscal baseado na IE.
+# A IE informada pela usuário deve ter 12 dígitos. Caso contrário, emite mensagem de erro.
+# Transforma a entrada digitada em número e cria uma lista com os dígitos correspondentes.
+# Com a lista criada, gera a dezena indicativa do Núcleo Fiscal responsável pelo trabalho.
 
 def cria_lista(x):
     lista = []
     for i in range(12):
-        lista.append(x % 10) # dividindo o nro por 10 e colocando o resto na lista
-        x = x // 10 # dividindo o nro por 10 e ficando com a parte inteira do resultado
+        lista.append(x % 10) # cada dígito é obtido pelo resto da divisão do nro por 10
+        x = x // 10          # atualiza o número com a parte inteira da divisão por 10
         i += 1
     return lista
 
 def gera_dezena(lista):
-    dezena = ''
-    for i, digito in enumerate(lista):
-        if (i == 4):
-            dezena_milhar = str(digito)
-        elif (i == 5):
-            centena_milhar = str(digito)
-    dezena = centena_milhar + dezena_milhar
+    dezena = str(lista[5]) + str(lista[4])
     return dezena
 
 def imprime_mensagens(x, dezena):
