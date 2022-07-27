@@ -1,4 +1,4 @@
-# esse código gera uma lista de números ímpares a partir da quantidade informada pelo usuário
+# Este código gera uma lista de números ímpares a partir da quantidade informada pelo usuário.
 
 def gera_impares(n):
 	lista_impares = []

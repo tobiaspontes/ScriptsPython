@@ -1,4 +1,4 @@
-# esse código pede ao usuário para digitar um número inteiro e verifica se existem dígitos iguais adjacentes
+# Este código pede ao usuário para digitar um número inteiro e verifica se existem dígitos iguais adjacentes
 
 def compara_digitos(digito_anterior, numero_anterior, tamanho):
 	encontrei_adjacente = False

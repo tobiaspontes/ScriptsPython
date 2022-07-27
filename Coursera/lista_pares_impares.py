@@ -1,4 +1,4 @@
-# esse código gera uma lista de números inteiros aleatórios e cria duas listas
+# Este código gera uma lista de números inteiros aleatórios e cria duas listas
 # uma lista de números pares e outra de números ímpares
 
 from gera_lista import Lista

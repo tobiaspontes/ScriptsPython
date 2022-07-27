@@ -1,5 +1,5 @@
-'''Este código recebe um número inteiro informado pelo usuário
-e retorna os dígitos correspondentes à unidade, dezena, centena etc do número'''
+# Este código recebe um número inteiro informado pelo usuário
+# e retorna os dígitos correspondentes à unidade, dezena, centena etc do número.
 
 def obter_digito(d):
     if d == 0: return 'Unidade            '

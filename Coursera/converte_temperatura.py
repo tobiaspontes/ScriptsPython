@@ -1,3 +1,5 @@
+# Este código converte temperatura entre Celsius e Fahrenheit.
+
 def mensagem_inicial():
     print()
     print(55 * '*')

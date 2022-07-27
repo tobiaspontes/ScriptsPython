@@ -1,3 +1,7 @@
+# Este código recebe números informados pelo usuário e verifica se os números digitados
+# estão em ordem decrescente. Caso o usuário entre com zero ou um número fora da ordem
+# decrescente, encerra o código.
+
 decrescente = True
 anterior = int(input('Digite o primeiro número da sequência: '))
 valor = 1
