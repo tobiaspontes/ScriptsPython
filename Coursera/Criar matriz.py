@@ -19,6 +19,7 @@ def dimensoes(matriz):
     dimensao = (str(i) + 'X' + str(j))
     return dimensao
 
+
 if (__name__ == '__main__'):
     nro_linhas = int(input('\nDigite o número de linhas: '))
     nro_colunas = int(input('Digite o número de colunas: '))

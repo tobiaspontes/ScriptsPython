@@ -1,4 +1,4 @@
-n = int(input('Digite o valor de n: '))
+n = int(input('\nDigite o valor de n: '))
 if n == 0:
 	saida = 1
 else:
@@ -6,4 +6,4 @@ else:
 	while n > 1:
 		saida = saida * (n - 1)
 		n = n - 1
-print(saida)
+print(f'\nO fatorial é {saida:,.0f}\n'.replace(',','.'))

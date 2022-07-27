@@ -15,6 +15,7 @@ def obter_digito(d):
     if d == 10: return 'Dezena de bilhão   '
     if d == 11: return 'Centena de bilhão  '
 
+
 if (__name__ == '__main__'):
     numero = input('\nDigite um número inteiro: ')
     tamanho = len(numero)
