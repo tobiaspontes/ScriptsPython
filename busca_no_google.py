@@ -1,7 +1,9 @@
+# Este código utiliza a biblioteca googlesearch para realizar uma pesquisa no google
+
 from googlesearch import search
 
 # Texto da busca
-query = 'João Tobias da Silva Pontes'
+query = 'roger federer'
 
 # Faz a busca e cria lista com os links dos resultados
 result = list(
