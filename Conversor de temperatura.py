@@ -1,4 +1,7 @@
 # Conversor de Unidades: Graus Celsius e Fahrenheit
+import os
+
+os.system('cls')
 
 branco = '\033[0;29m'
 preto = '\033[0;30m'
@@ -16,12 +19,12 @@ def menu_inicial():
 def cel_fahr():
    C = float(input('\nEntre com a temperatura em graus Celsius: '))
    F = C * (9 / 5) + 32
-   print(azul,'Valor em Fahrenheit: {0:.2f}°F'.format(F),sep='')
+   print(azul,'\nValor em Fahrenheit: {0:.2f}°F\n'.format(F),sep='')
 
 def fahr_cel():
    F = float(input('\nEntre com a temperatura em graus Fahrenheit: '))
    C = (F - 32) * (5 / 9)
-   print(azul,'Valor em Celsius: {0:.2f}°C'.format(C),sep='')
+   print(azul,'\nValor em Celsius: {0:.2f}°C\n'.format(C),sep='')
 
 if __name__=='__main__':
    menu_inicial()

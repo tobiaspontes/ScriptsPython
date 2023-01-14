@@ -90,8 +90,4 @@ b_17.place(x=118, y=208)
 b_18 = Button(frame_corpo, command=calcular, text='=', width=5, height=2, bg=cor5, fg=cor2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
 b_18.place(x=177, y=208)
 
-
-
-
-
 janela.mainloop()
