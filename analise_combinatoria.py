@@ -6,9 +6,9 @@ def calculo():
     n = int(entry_n.get())
     k = int(entry_k.get())
 
-    label_combinacao["text"] = f'O total de combinações de {n} elementos tomados {k} a {k} é igual a {combinacao(n,k):,.0f}\n\nNa combinação, a ordem dos elementos não importa: (a,b) = (b,a).'.replace(',','.')
+    label_combinacao["text"] = f'O total de combinações de {n} elementos tomados {k} a {k} é igual a {combinacao(n,k):,.0f}'.replace(',','.') + '\n\nNa combinação, a ordem dos elementos não importa: (a,b) = (b,a).'
 
-    label_arranjo["text"] = f'O total de arranjos de {n} elementos tomados {k} a {k} é igual a {arranjo(n,k):,.0f}\n\nNo arranjo, a ordem dos elementos importa: (a,b) != (b,a).'.replace(',','.')
+    label_arranjo["text"] = f'O total de arranjos de {n} elementos tomados {k} a {k} é igual a {arranjo(n,k):,.0f}'.replace(',','.') + '\n\nNo arranjo, a ordem dos elementos importa: (a,b) é diferente de (b,a).'
 
 
 def fatorial(n):

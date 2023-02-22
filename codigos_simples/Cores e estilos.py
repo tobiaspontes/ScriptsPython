@@ -25,14 +25,14 @@ branco = '\033[1;37m'
 
 print('Fonte colorida')
 
-print(cinza+'Hello, mundo! 30 cinza')
-print(vermelho+'Hello, mundo! 31 vermelho')
-print(verde+'Hello, mundo! 32 verde')
-print(amarelo+'Hello, mundo! 33 amarelo')
-print(azul+'Hello, mundo! 34 azul')
-print(lilas+'Hello, mundo! 35 lilás')
-print(azul+'Hello, mundo! 36 azul claro')
-print(branco+'Hello, mundo! 37 branco')
+print(cinza+'Hello, mundo! 30 cinza\n')
+print(vermelho+'Hello, mundo! 31 vermelho\n')
+print(verde+'Hello, mundo! 32 verde\n')
+print(amarelo+'Hello, mundo! 33 amarelo\n')
+print(azul+'Hello, mundo! 34 azul\n')
+print(lilas+'Hello, mundo! 35 lilás\n')
+print(azul+'Hello, mundo! 36 azul claro\n')
+print(branco+'Hello, mundo! 37 branco\n')
 
 fundo_preto = '\033[0;40m'
 fundo_vermelho = '\033[0;41m'
@@ -43,16 +43,16 @@ fundo_lilas = '\033[0;45m'
 fundo_azul_claro = '\033[0;46m'
 fundo_cinza = '\033[0;47m'
 
-print('\nFundo colorido')
+print('\nFundo colorido\n')
 
-print(fundo_preto+'Hello, mundo! 40 preto')
-print(fundo_vermelho+'Hello, mundo! 41 vermelho')
-print(fundo_verde+'Hello, mundo! 42 verde')
-print(fundo_amarelo+'Hello, mundo! 43 amarelo')
-print(fundo_azul+'Hello, mundo! 44 azul')
-print(fundo_lilas+'Hello, mundo! 45 lilás')
-print(fundo_azul_claro+'Hello, mundo! 46 azul claro')
-print(fundo_cinza+'Hello, mundo! 47 cinza')
+print(fundo_preto+'Hello, mundo! 40 preto\n')
+print(fundo_vermelho+'Hello, mundo! 41 vermelho\n')
+print(fundo_verde+'Hello, mundo! 42 verde\n')
+print(fundo_amarelo+'Hello, mundo! 43 amarelo\n')
+print(fundo_azul+'Hello, mundo! 44 azul\n')
+print(fundo_lilas+'Hello, mundo! 45 lilás\n')
+print(fundo_azul_claro+'Hello, mundo! 46 azul claro\n')
+print(fundo_cinza+'Hello, mundo! 47 cinza\n')
 
-print('\n\033[1;34;42mFonte e Fundo')
-print('\033[1;35;43mHello, mundo!')
+print('\n\033[1;34;42mFonte e Fundo\n')
+print('\033[1;35;43mHello, mundo!\n')

@@ -1,4 +1,6 @@
 # Receber entrada do usuário e imprimir uma mensagem
+import os
+
 
 def obter_mes(n):
     if n == '1': return 'janeiro'
@@ -14,8 +16,11 @@ def obter_mes(n):
     if n == '11': return 'novembro'
     if n == '12': return 'dezembro'
 
-print('\nNascimento')
-dia = input('\nEntre com o dia do seu nascimento: ')
-mes = input('Entre com o mês do seu nascimento: ')
-ano = input('Entre com o ano do seu nascimento: ')
-print('\nVocê nasceu dia',dia,'de',obter_mes(mes),'de',ano,'\n')
+
+if __name__ == '__main__':
+    os.system('cls')
+    print('\nNascimento')
+    dia = input('\nEntre com o dia do seu nascimento: ')
+    mes = input('Entre com o mês do seu nascimento: ')
+    ano = input('Entre com o ano do seu nascimento: ')
+    print('\nVocê nasceu dia',dia,'de',obter_mes(mes),'de',ano,'\n')
